@@ -62,21 +62,90 @@
 //   $clock = new Date();
 // },1000);
 
-let $clock = new Date();
+// let $clock = new Date();
 
+// let $clock = document.querySelector('time');
+
+// let $clock = function getTime() {
+//   getTime($clock)
+//
+//
+//
+// }
+// let $clock = document.querySelector('time');
+
+// let h = today.getHours();
+// let m = today.getMinutes();
+// let s = today.getSeconds();
+//
 // setInterval(() => {
 //   currentTime = new Date();
 //   console.log(currentTime);
 // },1000);
-//
+// //
 // let $clock = new Date ();
 
-document.querySelector('time').innerHTML = $clock;
+// document.querySelector('time').innerHTML = $clock;
 
 // let currentTime = () => {
 //   currentTime = new Date ();
 //   console.log(currentTime);
 // }
+
+// function currentTime() {
+//   let date = new Date(); /* creating object of Date class */
+//   let hour = date.getHours();
+//   let min = date.getMinutes();
+//   let sec = date.getSeconds();
+//
+//   function currentTime() {
+//     hour = updateTime(hour);
+//     min = updateTime(min);
+//     sec = updateTime(sec);
+//   }
+//
+//   function updateTime(k) {
+//     if (k < 10) {
+//       return "0" + k;
+//     }
+//     else {
+//       return k;
+//     }
+//   }
+//   document.querySelector('time').innerHTML = hour + " : " + min + " : " + sec;
+//
+//   function currentTime() {
+//     let t = setTimeout(function(){ currentTime() }, 1000);
+//   }
+//
+//   currentTime();
+//
+// }
+
+
+
+function currentTime() {
+  let date = new Date(); /* creating object of Date class */
+  let hour = date.getHours();
+  let min = date.getMinutes();
+  let sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.querySelector("time").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+     let t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime();
 
 
 
