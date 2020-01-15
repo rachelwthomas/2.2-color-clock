@@ -53,11 +53,25 @@
 //  console.log('you clicked a button');
 // });
 
-let $clock = document.querySelector('time');
-document.write(Date($clock));
-console.log($clock)
+// let $clock = document.querySelector('time');
+// document.write(Date($clock));
+// console.log($clock)
+// let $clock = new Date();
 
-document.querySelector("p1").innerHTML = "New text!";
+// let $clock = setInterval(() => {
+//   $clock = new Date();
+// },1000);
+
+let $clock = new Date();
+
+// setInterval(() => {
+//   currentTime = new Date();
+//   console.log(currentTime);
+// },1000);
+//
+// let $clock = new Date ();
+
+document.querySelector('time').innerHTML = $clock;
 
 // let currentTime = () => {
 //   currentTime = new Date ();
