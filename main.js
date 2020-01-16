@@ -141,18 +141,7 @@ function currentTime() {
      // console.log(background);
      document.body.style.background = backgroundChange;
 
-
-
-    function growTimeBar() {
-    let timeBar = (sec/60);
-
-    }
-     // console.log(sec/60);
-
-     document.querySelector('time').style.paddingBottom = background;
-
-
-     // setInterval(function(){ currentTime() }, 1000);
+     setInterval(function(){ currentTime() }, 1000);
 
 }
 
