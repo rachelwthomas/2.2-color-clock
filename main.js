@@ -136,10 +136,15 @@ function currentTime() {
   // console.log(hour,min,sec);
 
   document.querySelector("time").innerText = hour + " : " + min + " : " + sec;
-     console.log( "#" + hour + min + sec);
+     // console.log( "#" + hour + min + sec);
      let background = ("#"+ hour + min +sec);
+     // console.log(background);
+     document.body.style.background = background;
 
-     // setInterval(function(){ currentTime() }, 1000);
+     // document.getElementbyClass('.container').style.backgroundColor = background;
+
+
+     setInterval(function(){ currentTime() }, 1000);
 
 }
 
