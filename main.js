@@ -137,14 +137,22 @@ function currentTime() {
 
   document.querySelector("time").innerText = hour + " : " + min + " : " + sec;
      // console.log( "#" + hour + min + sec);
-     let background = ("#"+ hour + min +sec);
+     let backgroundChange = ("#"+ hour + min +sec);
      // console.log(background);
-     document.body.style.background = background;
-
-     // document.getElementbyClass('.container').style.backgroundColor = background;
+     document.body.style.background = backgroundChange;
 
 
-     setInterval(function(){ currentTime() }, 1000);
+
+    function growTimeBar() {
+    let timeBar = (sec/60);
+
+    }
+     // console.log(sec/60);
+
+     document.querySelector('time').style.paddingBottom = background;
+
+
+     // setInterval(function(){ currentTime() }, 1000);
 
 }
 
