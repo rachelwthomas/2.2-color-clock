@@ -132,8 +132,15 @@ function currentTime() {
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
-  document.querySelector("time").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-     let t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+
+  // console.log(hour,min,sec);
+
+  document.querySelector("time").innerText = hour + " : " + min + " : " + sec;
+     console.log( "#" + hour + min + sec);
+     let background = ("#"+ hour + min +sec);
+
+     // setInterval(function(){ currentTime() }, 1000);
+
 }
 
 function updateTime(k) {
@@ -145,7 +152,18 @@ function updateTime(k) {
   }
 }
 
+
+
+
+
 currentTime();
+
+
+
+
+
+
+
 
 
 
