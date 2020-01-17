@@ -72,18 +72,7 @@
 //
 //
 // }
-// let $clock = document.querySelector('time');
 
-// let h = today.getHours();
-// let m = today.getMinutes();
-// let s = today.getSeconds();
-//
-// setInterval(() => {
-//   currentTime = new Date();
-//   console.log(currentTime);
-// },1000);
-// //
-// let $clock = new Date ();
 
 // document.querySelector('time').innerHTML = $clock;
 
@@ -92,26 +81,7 @@
 //   console.log(currentTime);
 // }
 
-// function currentTime() {
-//   let date = new Date(); /* creating object of Date class */
-//   let hour = date.getHours();
-//   let min = date.getMinutes();
-//   let sec = date.getSeconds();
-//
-//   function currentTime() {
-//     hour = updateTime(hour);
-//     min = updateTime(min);
-//     sec = updateTime(sec);
-//   }
-//
-//   function updateTime(k) {
-//     if (k < 10) {
-//       return "0" + k;
-//     }
-//     else {
-//       return k;
-//     }
-//   }
+
 //   document.querySelector('time').innerHTML = hour + " : " + min + " : " + sec;
 //
 //   function currentTime() {
@@ -147,8 +117,15 @@ function currentTime() {
 
     // querySelector('.timerbar').style.width=500px;
     document.querySelector('.timerbar').setAttribute("style","width:500px");
+    let timer = (sec/60);
+    let width = timer * 500;
+
+    console.log(width);
 
 
+
+    //  function() {
+    // document.body.style.width = ((sec/60) +'px');
 
 
      setInterval(function(){ currentTime() }, 1000);
