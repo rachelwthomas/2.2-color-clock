@@ -121,13 +121,32 @@ function currentTime() {
     let width = timer * 500;
     let pixel = width + "px";
 
-    console.log(pixel);
+    // document.body.style.span = width;
+
+    document.querySelector("#timerbar").style.width = pixel;
 
 
 
-    document.querySelector('.timerbar').setAttribute("style", pixel);
+    // console.log(pixel);
+    // document.querySelector('.timerbar') = progress;
+    // document.body.style.width = pixel;
 
-      // document.querySelector(".timerbar").innerText = width + "px"
+        //      let div = document.getElementById ("myDiv");
+        //     var input = document.getElementById ("myInput");
+        //
+        //     div.style.width = input.value;
+
+        // console.log(pixel);
+        // document.querySelector('.timerbar') = progress;
+        //
+        // progress.style.width = pixel;
+
+        // }
+
+
+    // document.querySelector('.timerbar').setAttribute("style", pixel);
+
+      // document.querySelector(".timerbar").innerText = pi
 
 
 

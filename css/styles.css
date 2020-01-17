@@ -13,7 +13,7 @@
     transform: translateX(-50%);
     padding: 0px 25px; }
 
-.timerbar {
+#timerbar {
   position: absolute;
   height: 15px;
   top: 680px;
