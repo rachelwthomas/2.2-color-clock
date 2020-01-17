@@ -116,11 +116,19 @@ function currentTime() {
      // document.body.style.width = timerbar
 
     // querySelector('.timerbar').style.width=500px;
-    document.querySelector('.timerbar').setAttribute("style","width:500px");
+    // document.querySelector('.timerbar').setAttribute("style",);
     let timer = (sec/60);
     let width = timer * 500;
+    let pixel = width + "px";
 
-    console.log(width);
+    console.log(pixel);
+
+
+
+    document.querySelector('.timerbar').setAttribute("style", pixel);
+
+      // document.querySelector(".timerbar").innerText = width + "px"
+
 
 
 
