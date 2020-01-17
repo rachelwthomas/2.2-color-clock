@@ -136,10 +136,20 @@ function currentTime() {
   // console.log(hour,min,sec);
 
   document.querySelector("time").innerText = hour + " : " + min + " : " + sec;
-     // console.log( "#" + hour + min + sec);
+    // changes time to a hexcode
      let backgroundChange = ("#"+ hour + min +sec);
-     // console.log(background);
+     // changes background to reflect the hexcode based on time
      document.body.style.background = backgroundChange;
+    // tells perctage of a minute
+     // let timerbar =(sec/60);
+     // timerbar = document.querySelector('timerbar')
+     // document.body.style.width = timerbar
+
+    // querySelector('.timerbar').style.width=500px;
+    document.querySelector('.timerbar').setAttribute("style","width:500px");
+
+
+
 
      setInterval(function(){ currentTime() }, 1000);
 
@@ -154,7 +164,22 @@ function updateTime(k) {
   }
 }
 
+// querySelector('.timerbar').style.width=500px;
 
+// function timerBar () {
+//   let date = new Date();
+//   let sec = date.getSeconds();
+//   sec = updateTime(sec);
+//
+//   setInterval(function(){ currentTime() }, 1000);
+//
+//   console.log(sec/60);
+// }
+ // progress.style.width
+
+// document.body.style.width
+
+// set max width on time bar
 
 
 
@@ -165,7 +190,7 @@ currentTime();
 
 
 
-
+// $element.onmouseover
 
 
 

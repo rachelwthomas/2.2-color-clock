@@ -7,10 +7,19 @@
     position: absolute;
     color: #FFF;
     font-size: 60px;
+    font-family: 'Roboto',sans-serif;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0px 25px;
-    border-bottom: solid 2px #FFF; }
+    padding: 0px 25px; }
+
+.timerbar {
+  position: absolute;
+  height: 15px;
+  top: 680px;
+  left: 360px;
+  display: block;
+  background-color: #FFF;
+  width: 300px; }
 
 /*# sourceMappingURL=styles.css.map */
