@@ -110,13 +110,9 @@ function currentTime() {
      let backgroundChange = ("#"+ hour + min +sec);
      // changes background to reflect the hexcode based on time
      document.body.style.background = backgroundChange;
-    // tells perctage of a minute
-     // let timerbar =(sec/60);
-     // timerbar = document.querySelector('timerbar')
-     // document.body.style.width = timerbar
 
-    // querySelector('.timerbar').style.width=500px;
-    // document.querySelector('.timerbar').setAttribute("style",);
+
+    // ***************************************COVERTS SECONDS TO PIXEL WIDTH
     let timer = (sec/60);
     let width = timer * 500;
     let pixel = width + "px";
@@ -125,34 +121,24 @@ function currentTime() {
 
     document.querySelector("#timerbar").style.width = pixel;
 
+// ****************************************************attempted mouse over
 
-
-    // console.log(pixel);
-    // document.querySelector('.timerbar') = progress;
-    // document.body.style.width = pixel;
-
-        //      let div = document.getElementById ("myDiv");
-        //     var input = document.getElementById ("myInput");
-        //
-        //     div.style.width = input.value;
-
-        // console.log(pixel);
-        // document.querySelector('.timerbar') = progress;
-        //
-        // progress.style.width = pixel;
-
-        // }
-
-
-    // document.querySelector('.timerbar').setAttribute("style", pixel);
-
-      // document.querySelector(".timerbar").innerText = pi
+//
+//     let hexadecimal = ("#"+ hour + min +sec);
+//
+//     test.addEventListener("mouseenter", function( event ) {
+//
+//    event.target.style.innerHTML = hexadecimal;
+//
+//
+//   setTimeout(function() {
+//    event.target.style.color = "";
+//  }, 500);
+// }, false);
 
 
 
 
-    //  function() {
-    // document.body.style.width = ((sec/60) +'px');
 
 
      setInterval(function(){ currentTime() }, 1000);
@@ -168,22 +154,6 @@ function updateTime(k) {
   }
 }
 
-// querySelector('.timerbar').style.width=500px;
-
-// function timerBar () {
-//   let date = new Date();
-//   let sec = date.getSeconds();
-//   sec = updateTime(sec);
-//
-//   setInterval(function(){ currentTime() }, 1000);
-//
-//   console.log(sec/60);
-// }
- // progress.style.width
-
-// document.body.style.width
-
-// set max width on time bar
 
 
 
